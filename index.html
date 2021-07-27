@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Otomanopee+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Budget Plan</h1>
+        <h2>Welcome to budget Plan</h2>
+        
+        <h4>Where you check if you qualify for a homeloan, vehicle purchase and
+             how much you need to save for a certian product. </h4>
+         <h3> Fight Your Budget</h3>
+
+        
+    </div>
+
+    <div class="userInput">
+        <img src="img2.png" id="slide" height="600" width="650" >
+        <h5>Enter the user Monthly Income before deduction:</h5>
+        <input type="text" id="income" placeholder="" >
+        
+        <div class="btn">
+            <input type="button" id="calculateTax" value="Calculate Tax">
+        </div>
+        <p id="taxRes"></p>
+       
+    </div>
+
+    <div class="expenses">
+        <h2>Expenses</h2>
+        <label for="tax">Tax :</label><br>
+        <input type="text" id="tax"><br>
+        <label for="grocery">Grocery :</label><br>
+        <input type="text" id="grocery"><br>
+        <label for="waterAndlight">Water & Lights :</label><br>
+        <input type="text" id="waterAndLight"><br>
+        <label for="travel">Travel Cost :</label><br>
+        <input type="text" id="travel"><br>
+        <label for="phone">Phone Cost :</label><br>
+        <input type="text" id="phone"><br>
+        <label for="other">Other Expenses:</label><br>
+        <input type="text" id="other"><br>
+
+       
+     
+    </div>
+
+    <div class="house">
+        <h2>House Payments</h2>
+        <label for="price">Purchase Price :</label><br>
+        <input type="text" id="price"><br>
+        <label for="deposite">Deposite :</label><br>
+        <input type="text" id="deposite"><br>
+        <label for="percentage">Interest in percentage % :</label><br>
+        <input type="text" id="percentage" required><br>
+        <label for="months">Number of Months :</label><br>
+        <input type="text" id="months"><br>
+        <div class="btn">
+            <input type="button" id="btnDisplayHouse" value="Display">
+            <input type="button" id="btnRefreshHouse" value="Refresh">
+        </div>
+     
+
+        <div class="houseRes">
+            <p id="qualify"></p>
+            <p id="housePayment"></p>
+            <p id="monthlyExpenses"></p>
+            <p id="houseAvailable"></p>
+            <p id="qualify"></p>
+            
+        </div>
+    </div>
+
+    <div class="vehicle">
+        <h2>Vehicle Purchase</h2>
+        <label for="model">Model of the car :</label><br>
+        <input type="text" id="model"><br>
+        <label for="carPrice">Purchas Price :</label><br>
+        <input type="text" id="carPrice"><br>
+        <label for="carDeposite">Deposite :</label><br>
+        <input type="text" id="carDeposite"><br>
+        <label for="carInterest">Interest in percentage % :</label><br>
+        <input type="text" id="carInterest"><br>
+        <label for="years">Number of years :</label><br>
+        <input type="text" id="years"><br>
+        <label for="insurance">Insurance Premuim :</label><br>
+        <input type="text" id="insurance"><br>
+        <div class="btn">
+            <input type="button" id="btnDisplayVehicle" value="Display">
+            <input type="button" id="btnRefreshVehicle" value="Refresh">
+        </div>
+        
+
+        <div class="houseRes">
+            <p id="carModel"></p>
+            <p id="carPayment"></p>
+            <p id="insurancePayment"></p>
+            <p id="vehicleExpenses"></p>
+            
+            <p id="vehicleAvailable"></p>
+            
+            
+        </div>
+    </div>
+
+    <div class="saving">
+        <h2>Saving Plan</h2>
+        <label for="reason">Reason for saving :</label><br>
+        <input type="text" id="reason"><br>
+        <label for="amount">Total Amount :</label><br>
+        <input type="text" id="amount"><br>
+        <label for="savingInterest">Interest in percentage % :</label><br>
+        <input type="text" id="savingInterest"><br>
+        <label for="years">NO. of years for saving  :</label><br>
+        <input type="text" id="savingYears"><br>
+        <div class="btn">
+            <input type="button" id="btnDisplaySaving" value="Display">
+            <input type="button" id="btnRefreshSaving" value="Refresh">
+        </div>
+  
+
+        <div class="houseRes">
+            <p id="savingReason"></p>
+            <p id="saveAmount"></p>
+            <p id="savingExpense"></p>
+            <p id="savingAvailable"></p>
+            
+    </div>
+
+    
+    <script src="JavaScript.js"></script>
+</body>
+</html>
