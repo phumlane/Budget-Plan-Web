@@ -165,7 +165,7 @@ function savingRefresh(){
 function calculate(){
     var income = Number(document.getElementById("income").value);
 
-    var res = (income/100) * 15;
+    var res = (income/100) * 18;
 
     document.getElementById("taxRes").innerHTML = "Tax Paid is : R" + res;
 }
