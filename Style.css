@@ -241,6 +241,9 @@ footer{
          font-size: 35px;
     
      }
+    .header{
+         height: 40vh;
+     }
      .header h2{
          font-size: 20px;
      }
@@ -257,8 +260,9 @@ footer{
 
      .userInput img{
          float: center;
-         width: 250px;
-         height:250px;
+         width: 100%;
+         margin-top: 20px;
+         height:300px;
      }
 
      .userInput h5{
